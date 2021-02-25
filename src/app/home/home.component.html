@@ -1,0 +1,13 @@
+<h1>Bonjour !</h1>
+
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <form (ngSubmit)="onSubmitCArd(f)" #f="ngForm">
+        <div class="form-group">
+          <label for="text">Que voulez-vous partager aujourd'hui ?</label>
+          <input type="text" id="text" class="form-control" name="text" ngModel required> 
+        </div>
+        <button  type="submit" class="btn btn-primary" [disabled]="f.invalid">Publier</button>
+      </form>
+    </div>
+  </div>
